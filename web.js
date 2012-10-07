@@ -80,7 +80,7 @@ app.use("/flights-3m",function(req,res,next) {
 })
 
 // Change this to the static directory of the index.html file
-app.use("/",express.static(".//", {maxAge: 0}))
+app.use("/",express.static("./www/", {maxAge: 0}))
 
 var port = process.env.PORT || 5000;
 app.listen(port,function() {
